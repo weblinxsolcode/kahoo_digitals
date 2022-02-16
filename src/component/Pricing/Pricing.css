@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&display=swap');
+
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.App {
+  /* text-align: center; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #24262D;
+  font-family: 'Poppins', sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.btn-custom-1{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  height: 48px;
+  width: 150px;
+margin-left: 20px;
+
+  
+}
+.btn-custom-1 a{
+  color: white;
+font-size: 13px;
+font-weight: 400;
+}
+.fa-bars{
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: white;
+  padding: 50px 17px;
+  /* margin-top: -30px; */
+
+  font-weight: 400;
+  height: 10px !important;
+}
+.navbar{
+  padding-top: 0px !important;
+}
+
+
+.ak_brandlogo{
+  margin-left: 30px;
+/* width: 80px; */
+  padding: 10px 0 !important;
+
+
+}
+.navbar-brand  {
+  margin-top: -11px !important;
+}
+.active{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%) !important;
+  width: 130px;
+  text-align: center;
+}
+.navbar-expand-lg{
+  padding: 0 !important;
+}
+/* navbar end */
+
+ /* Pricing section */
+ .ak_pricingbanner{
+  background-image: url(../../assests/images/ak_pricing_banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 65vh;
+  max-width: 100%;
+}
+.ak_pricingbg{
+  background-image: url(../../assests/images/ak_pricing_bg.png);
+  background-position: left  ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 700px ;
+  /* margin-top: 100px; */
+  
+  }
+  .ak_pricing_text1{
+    color: #C7C8C9;
+
+  }
+  .ak_text-custom_about1{
+    color: white;
+
+  }
+  .ak_text-custom_about2{
+    color: #C7C8C9;
+    font-size: 14px;
+
+    
+    margin-left: 0px !important;
+    
+  }
+  .ak_pricing_table{
+    padding-top: 120px;
+  }
+
+  .ak_pricing_premium{
+    background-color: #1D1F26;
+    color: white;
+    max-width: 450px;
+  }
+  .ak_pricing_premium2{
+    background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+    color: white;
+    max-width: 450px;
+  }
+  .ak_premium_text1{
+    font-weight: bold;
+    padding-top: 20px;
+  }
+.ak_premium_text2{
+  font-weight: 300;
+  padding-top: 20px;
+}
+.ak_premium_text3{
+  font-weight: bold;
+  padding-top: 20px;
+  color: #3a91bc;
+}
+.ak_premium_text3_1{
+  padding-top: 0px;
+  /* line-height: 1px; */
+  color: #3a91bc;
+
+}
+.ak_premium_text4{
+  font-size: 14px;
+  color: #C7C8C9;
+}
+.border-bottom1{
+
+  border-bottom: 1px solid #3D3E42 ;
+  width: 70%;
+  
+}
+.ak_pricing_head{
+  font-size: 35px;
+}
+.ak_premium_text5{
+  padding-top: 50px;
+font-weight: 300;
+}
+.ak_premium_text6{
+  font-size: 13px;
+  color: #C7C8C9;
+
+}
+.ak_premium_text7{
+  font-size: 13px;
+  color: white;
+
+}
+.btn_pricing1{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  width: 80%;
+}
+
+.btn_pricing1 a{
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 300;
+
+}
+.btn_pricing2{
+  background-color: #1D1F26;
+  width: 80%;
+
+}
+.btn_pricing2 a{
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 300;
+
+}
+
+  /* .ak_about_banner2{
+    background-image: url(assests/images/ak_mid_bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100% ;
+  } */
+
+  .ak_about_textp{
+    color: #C7C8C9;
+    font-size: 14px;
+  }
+
+  .ak_about_image2{
+    padding-right: 50px !important;
+  }
+
+  .acc-card {
+    color: white;
+    background-color: #24262D;
+    /* border-bottom: 1px solid rgb(31, 31, 31); */
+    /* width: 70%; */
+    border-style: none !important;
+  }
+
+  .ak_acord{
+    width: 100%;
+  }
+  
+  .ans {
+    text-align: left;
+    border-left: 2px solid #148dea;
+    margin-left: 35px;
+  }
+
+.ak_faq_bannner1{
+  background-image: url(../../assests/images/ak_faq_banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 60vh;
+  margin-top: -170px;
+}
+
+.table{
+  background-color: white;
+  padding-top: 20px !important; 
+}
+
+.table-striped{
+  background-color: #b0c8e2;
+ 
+}
+
+.ak_th{
+  background-color: #0082CB;
+}
+
+.ak_tr1{
+  background-color: #E3EDFC;
+  color: #1D1F26 !important;
+  font-weight: 300;
+
+
+}
+
+.ak_table_p{
+ text-align: center;
+}
+.table th{
+  color: #1D1F26;
+  font-weight: 300;
+
+ 
+}
+.table tr td{
+  color: white !important;
+  font-weight: 300;
+
+ 
+}
+
+/* footer */
+.btn-custom-2{
+   border-style: solid;
+  border-width: 3px;
+  border-image:  linear-gradient(180deg, #225478 0%, #3a91bc 100%) 1 ;
+
+height: 55px;
+width: 140px;
+}
+.btn-custom-2 a{
+  color: white;
+}
+
+.fa-angle-right{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  -webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+font-size: 18px;
+
+}
+.btn-custom-3{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+
+height: 55px;
+width: 140px;
+}
+.btn-custom-3 a{
+  color: white;
+
+}
+.ak_footer_Input{
+  background-color: white !important; 
+
+}
+.input-group{
+  width: 270px !important;
+  background-color: white ;
+  border-style: none !important;
+}
+.input-group input{
+  background-color: white !important;
+  border-style: none !important;
+
+}
+
+.ak_contactbanner2{
+  background-image: url(../../assests/images/ak_footer_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ak_contactbanner2_text{
+  color: white;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn_contact3{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+width: 160px;
+height: 45px;
+
+margin-top: 20px;
+}
+.btn_contact3 a{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+.ak_contact2_content{
+  padding-left: 140px;
+}
+footer{
+  background-color: #24262D;
+}
+
+
+
+
+.btn_footer{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  width: 100px;
+height: 37px;
+margin-right: 10px;
+border-radius: 0px;
+
+}
+.btn_footer a{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+footer a{
+  font-size: 14px;
+  color: #3D3E42  ;
+}
+.ak_footer_foot{
+  border: 1px solid gray ;
+  border-bottom:none ;
+  font-size: 13px;
+  padding: 0 60px;
+}
+
+.ak-f-1{
+  padding-right: 200px;
+}
+/* .ak-f-2{
+  padding-left: 100px;
+} */
+
+.ak_footer_top{
+  padding-top: 270px;
+}
+.ak_footer_toptext{
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 430px) {
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+.ak_contact2_content{
+  padding-left: 0px;
+}
+ .ak_footer_top{
+   padding-top: 50px;
+ }
+ .btn_contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 85px;
+  
+ }
+ .ak-f-1 {
+  padding-right: 0px;
+
+}
+.ak-f-1 h4{
+  text-align: center;
+}
+.ak_contact_content2 {
+  color: #C7C8C9;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 0px;
+  text-align: center;
+}
+.ak_location_icon{
+  display: none;
+}
+.ak_contact_con_text{
+  text-align: center;
+  padding: 0;
+}
+.ak_contact_con_text2{
+  text-align: center;
+  padding: 0;
+}
+.ak_form_hight{
+margin-top:0 !important ;
+margin-bottom: 10px !important; 
+}
+.ak_footer_foot{
+  text-align: center !important; 
+  padding: 0 ;
+}
+.ak_footer_text1{
+  text-align: center !important;
+}
+}
+
+@media only screen and (max-width: 912px) {
+
+  .ak_footer_top_logo{
+    display: flex;
+    justify-content: center;
+  }
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+ 
+}
+/* @media only screen and (max-width: 1400px) {
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+ 
+} */

@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&display=swap');
+
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.App {
+  /* text-align: center; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #24262D;
+  font-family: 'Poppins', sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.btn-custom-1{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  height: 48px;
+  width: 150px;
+margin-left: 20px;
+
+  
+}
+.btn-custom-1 a{
+  color: white;
+font-size: 13px;
+font-weight: 400;
+}
+.fa-bars{
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: white;
+  padding: 50px 17px;
+  /* margin-top: -30px; */
+
+  font-weight: 400;
+  height: 10px !important;
+}
+.navbar{
+  padding-top: 0px !important;
+}
+
+
+.ak_brandlogo{
+  margin-left: 30px;
+/* width: 80px; */
+  padding: 10px 0 !important;
+
+
+}
+.navbar-brand  {
+  margin-top: -11px !important;
+}
+.active{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%) !important;
+  width: 130px;
+  text-align: center;
+}
+.navbar-expand-lg{
+  padding: 0 !important;
+}
+/* navbar end */
+
+ /* Home section */
+ .ak_hero_section {
+  font-family: 'Bebas Neue', cursive
+}
+
+.ak_contactbanner {
+  background-image: url(assests/images/ak_contact_banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 100%;
+}
+
+.home_only_bit_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.home_only_bit_text {
+  color: white;
+}
+
+.bitcoin_head {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.bitcoin_para {
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.bitcoin_cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(29, 31, 38);
+  margin: 0px 12px;
+  border: none;
+  height: 170px;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.for_border {
+  border-top: 2px solid gray;
+  border-radius: 50px;
+  width: 54px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+}
+
+.Virtuse_news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.Virtuse_news_cont {
+  color: white;
+}
+
+.Virtuse_head {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.Virtuse_para {
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.Virtuse_cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  background-color: rgb(29, 31, 38);
+  margin: 0px 15px;
+  border: none;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.card-text2 {
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  width: 80%;
+}
+
+.view_all {
+  color: white;
+  background-color: rgb(42, 105, 143);
+  padding: 10px 30px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.stats {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assests/images/home__code_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 967px) {
+  .stats {
+      background-image: none;
+      height: max-content;
+  }
+}
+
+.stats_card {
+  margin: 0px 15px;
+  border: 1px solid gray;
+  color: white;
+  background-color: rgb(29, 31, 38);
+  padding: 40px 110px;
+  border-radius: 5px;
+}
+
+.stats_card_blue {
+  margin: 0px 15px;
+  border: 1px solid gray;
+  color: white;
+  background-color: rgb(50, 124, 165);
+  padding: 40px 110px;
+  border-radius: 5px;
+}
+
+.stats_card p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.stats_card_blue p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.count {
+  font-size: 28px !important;
+}
+
+.stats_card3 {
+  margin: 0px 15px;
+  border: 1px solid gray;
+  color: white;
+  background-color: rgb(29, 31, 38);
+  padding: 40px 80px;
+  border-radius: 5px;
+}
+
+.Automated {
+  color: white;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.automated_img img {
+  width: 100%;
+  height: max-content;
+}
+
+.automated_head {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.automated_para {
+  width: 83%;
+  font-size: 15px !important;
+  color: rgb(151, 151, 151);
+  font-weight: 300;
+}
+
+.automated_bullet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.bullet_border {
+  width: 20px !important;
+  border-radius: 15px;
+  border-bottom: 4px solid #3a91bc;
+}
+
+.bullet_content {
+  margin-left: 7px;
+  font-size: 15px !important;
+  color: rgb(151, 151, 151);
+  font-weight: 300 !important;
+}
+
+@media(max-width: 760px) {
+  .automated_head {
+      text-align: center;
+  }
+
+  .automated_para {
+      width: 100%;
+      text-align: center;
+  }
+
+  .automated_content {
+      padding: 0px 10px !important;
+  }
+}
+
+.get_started {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.started_head {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.started_para {
+  width: 83%;
+  font-size: 15px !important;
+  color: rgb(151, 151, 151);
+  font-weight: 300;
+}
+
+.start_automated_bullet {
+  width: 83%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+@media(max-width: 760px) {
+  .started_para {
+      width: 100%;
+      text-align: center;
+  }
+
+  .started_head {
+      text-align: center;
+  }
+
+  .started_content {
+      padding: 0px 10px !important;
+  }
+}
+
+.as_seen{
+  margin-top: 70px;
+  margin-bottom: 40px;
+  background-image: url('assests/images/as_seen_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.ak_slider_2{
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.ak_devices_bg{
+  background-image: url(assests/images/ak_devices.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+
+/* footer */
+.btn-custom-2{
+   border-style: solid;
+  border-width: 3px;
+  border-image:  linear-gradient(180deg, #225478 0%, #3a91bc 100%) 1 ;
+
+height: 55px;
+width: 140px;
+}
+.btn-custom-2 a{
+  color: white;
+}
+
+.fa-angle-right{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  -webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+font-size: 18px;
+
+}
+.btn-custom-3{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+
+height: 55px;
+width: 140px;
+}
+.btn-custom-3 a{
+  color: white;
+
+}
+.ak_footer_Input{
+  background-color: white !important; 
+
+}
+.input-group{
+  width: 270px !important;
+  background-color: white ;
+  border-style: none !important;
+}
+.input-group input{
+  background-color: white !important;
+  border-style: none !important;
+
+}
+
+.ak_contactbanner2{
+  background-image: url(assests/images/ak_footer_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ak_contactbanner2_text{
+  color: white;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn_contact3{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+width: 160px;
+height: 45px;
+
+margin-top: 20px;
+}
+.btn_contact3 a{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+.ak_contact2_content{
+  padding-left: 140px;
+}
+footer{
+  background-color: #24262D;
+}
+
+
+
+
+.btn_footer{
+  background: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  width: 100px;
+height: 37px;
+margin-right: 10px;
+border-radius: 0px;
+
+}
+.btn_footer a{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+footer a{
+  font-size: 14px;
+  color: #3D3E42  ;
+}
+.ak_footer_foot{
+  border: 1px solid gray ;
+  border-bottom:none ;
+  font-size: 13px;
+  padding: 0 60px;
+}
+
+.ak-f-1{
+  padding-right: 200px;
+}
+/* .ak-f-2{
+  padding-left: 100px;
+} */
+
+.ak_footer_top{
+  padding-top: 270px;
+}
+.ak_footer_toptext{
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 430px) {
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+.ak_contact2_content{
+  padding-left: 0px;
+}
+ .ak_footer_top{
+   padding-top: 50px;
+ }
+ .btn_contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 85px;
+  
+ }
+ .ak-f-1 {
+  padding-right: 0px;
+
+}
+.ak-f-1 h4{
+  text-align: center;
+}
+.ak_contact_content2 {
+  color: #C7C8C9;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 0px;
+  text-align: center;
+}
+.ak_location_icon{
+  display: none;
+}
+.ak_contact_con_text{
+  text-align: center;
+  padding: 0;
+}
+.ak_contact_con_text2{
+  text-align: center;
+  padding: 0;
+}
+.ak_form_hight{
+margin-top:0 !important ;
+margin-bottom: 10px !important; 
+}
+.ak_footer_foot{
+  text-align: center !important; 
+  padding: 0 ;
+}
+.ak_footer_text1{
+  text-align: center !important;
+}
+}
+
+@media only screen and (max-width: 912px) {
+
+  .ak_footer_top_logo{
+    display: flex;
+    justify-content: center;
+  }
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+ 
+}
+/* @media only screen and (max-width: 1400px) {
+  .ak_hero_content {
+margin: 10px 0px;
+padding-left: 0;  
+text-align: center;
+}
+
+.ak_hero_image img{
+  padding: 10px 0;
+  
+  
+}
+.ak_hero_image
+{
+  display: flex;
+  justify-content: center;  
+}
+.ak_bitcoin_line{
+  padding: 10px 0;
+}
+
+.ak_hero_content h1{
+  width: 100%;
+  color: white;
+  font-size: 70px;
+}
+.ak_hero_content p{
+  width: 100%;
+  
+}
+ 
+} */
