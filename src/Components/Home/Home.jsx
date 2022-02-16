@@ -4,6 +4,9 @@ import './style.css';
 import virtuse_img1 from "../../assests/images/virtuse img1.png";
 import virtuse_img2 from "../../assests/images/virtuse img2.png";
 import virtuse_img3 from "../../assests/images/virtuse img3.png";
+import automated_invest from "../../assests/images/Automated Investing.png";
+import started_mob from "../../assests/images/started_mob.png";
+
 
 const Home = () => {
     return (
@@ -173,7 +176,71 @@ const Home = () => {
                 </div>
             </div>
 
-            
+            {/* Automated Investing */}
+            <div className='Automated'>
+                <div className="automated_img col-12 col-md-4 col-lg-4">
+                    <img className='' src={automated_invest} alt="" />
+                </div>
+                <div className="col-0 col-md-1 col-lg-1"></div>
+                <div className="automated_content col-12 col-md-7 col-lg-7">
+                    <p className="automated_head">
+                        Automated Investing
+                    </p>
+                    <p className="automated_para">
+                        Dollar-Cost Averaging is by far the smartest way to accumulate wealth. You can purchase automatically using Virtuse's recurring orders. Choose between daily, weekly, or monthly investments.
+                    </p>
+                    <div className='automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>Harness the power “the eighth wonder of the world.”</div>
+                    </div>
+                    <div className='automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>Set aside money to buy Bitcoin automatically</div>
+                    </div>
+                    <div className='automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>Customize your investment schedule</div>
+                    </div>
+                    <div className='automated_bullet mb-4'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>Dollar-Cost Averaging strategy beats 95% of institutional money managers.</div>
+                    </div>
+                    <p><a href="">learn More »</a></p>
+                </div>
+            </div>
+
+            {/* getting started */}
+            <div className="container get_started">
+                <div className="started_content col-12 col-md-8 col-lg-8">
+                    <p className="started_head">
+                        Get started in 3 minutes
+                    </p>
+                    <p className="started_para">
+                        Dollar-Cost Averaging is by far the smartest way to accumulate wealth. You can purchase automatically using Virtuse’s recurring orders. Choose between daily, weekly, or monthly investments.
+                    </p>
+                    <div className='start_automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>1. <a href="" style={{ textDecoration: "none" }}>Sign up</a> Create your profile and verify your email address.</div>
+                    </div>
+                    <div className='start_automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>2. <a href="" style={{ textDecoration: "none" }}>Fund your wallet</a> Add a deposit to your account using a credit card, bank transfer, stablecoins.</div>
+                    </div>
+                    <div className='start_automated_bullet'>
+                        <div className='bullet_border'></div>
+                        <div className='bullet_content'>3. <a href="" style={{ textDecoration: "none" }}>Start investing</a> Make instant purchases or set up an automated investment. It's that easy!</div>
+                    </div>
+                </div>
+                {/* <div className="col-0 col-md-1 col-lg-1"></div> */}
+                <div className="col-12 col-md-4 col-lg-4">
+                    <img src={started_mob} alt="" />
+                </div>
+            </div>
+
+            {/* as seen in */}
+            <div className='as_seen'>
+                
+            </div>
 
         </div>
     )
