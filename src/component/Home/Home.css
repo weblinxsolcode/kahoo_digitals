@@ -28,6 +28,8 @@ a{
   height: 48px;
   width: 150px;
 margin-left: 20px;
+border: none;
+border-radius: 6px;
 
   
 }
@@ -43,26 +45,24 @@ font-weight: 400;
 
 .navbar-nav .nav-item .nav-link{
   color: white;
-  padding: 50px 17px;
-  /* margin-top: -30px; */
+  padding: 30px  17px !important;
+  /* margin-top: 20px; */
 
   font-weight: 400;
   height: 10px !important;
 }
-.navbar{
-  padding-top: 0px !important;
-}
+
 
 
 .ak_brandlogo{
   margin-left: 30px;
 /* width: 80px; */
-  padding: 10px 0 !important;
+  /* padding: 10px 0 !important; */
 
 
 }
 .navbar-brand  {
-  margin-top: -11px !important;
+  /* margin-top: -11px !important; */
 }
 .active{
   background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%) !important;
@@ -70,7 +70,7 @@ font-weight: 400;
   text-align: center;
 }
 .navbar-expand-lg{
-  padding: 0 !important;
+  padding: 15px 0 !important;
 }
 /* navbar end */
 
@@ -79,13 +79,53 @@ font-weight: 400;
   font-family: 'Bebas Neue', cursive
 }
 
-.ak_contactbanner {
-  background-image: url(assests/images/ak_contact_banner.png);
+
+.ak_home_bitcoin{
+  background-image: url(../../assests/images/ak_bitcoin_banner.png);
+  background-position: right top 95%;
+  background-size: 82% ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+ 
+ 
+}
+
+.ak_home_vituse{
+  background-image: url(../../assests/images/ak_virtuse_banner.png );
+  background-position: right top 95%;
+  background-size: 67% ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  
+}
+.ak_contactbanner4 {
+  background-image: url(../../assests/images/ak_banner1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 65vh;
+  height: 80vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ak_home_icons a{
+transform: rotate(270deg);
+padding: 30px 0;
+color: white;
+font-size: 11px;
+font-weight: 300;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.ak_home_icons a i{
+  color: #3a91bc;
+  margin: 0 5px;
 }
 
 .home_only_bit_parent {
@@ -95,10 +135,17 @@ font-weight: 400;
   align-items: center;
   width: 100%;
   height: max-content;
+  min-height: 500px;
+  padding-bottom: 30px;
+
 }
 
 .home_only_bit_text {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bitcoin_head {
@@ -119,11 +166,13 @@ font-weight: 400;
   flex-wrap: wrap;
 }
 
-.card {
+.al_card {
   background-color: rgb(29, 31, 38);
   margin: 0px 12px;
   border: none;
-  height: 170px;
+  min-height: 200px;
+  max-width: 330px !important;
+
 }
 
 .card-title {
@@ -138,9 +187,12 @@ font-weight: 400;
 }
 
 .card-text {
-  font-weight: lighter;
-  font-size: 12px;
+  font-weight: 300 !important;
+  font-size: 14px;
   color: rgb(179, 179, 179);
+}
+.card-text a{
+color: #3a91bc;
 }
 
 .Virtuse_news {
@@ -203,7 +255,7 @@ font-weight: 400;
 .stats {
   margin-top: 70px;
   margin-bottom: 40px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assests/images/home__code_bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assests/images/home__code_bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 50vh;
@@ -231,13 +283,59 @@ font-weight: 400;
 }
 
 .stats_card_blue {
-  margin: 0px 15px;
+  /* margin: 0px 15px; */
   border: 1px solid gray;
   color: white;
   background-color: rgb(50, 124, 165);
   padding: 40px 110px;
   border-radius: 5px;
 }
+.ak_header_h{
+  font-family: 'Bebas Neue', cursive;
+  max-width: 70%;
+  font-size: 60px;
+}
+.ak_header_p{
+  font-size: 12px;
+  font-weight: 300;
+  max-width: 60%;
+  
+}
+
+.buy_btn{
+  background: #24262D;
+  border: 1px solid #3a91bc;
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.buy_btn a{
+ color: white;
+}
+
+.watch_btn{
+  background-image: linear-gradient(180deg, #225478 0%, #3a91bc 100%);
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+  border: none;
+
+}
+.ak_banner_button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+}
+.watch_btn a{
+ color: white;
+}
+
+
 
 .stats_card p {
   font-size: 15px;
@@ -262,6 +360,24 @@ font-weight: 400;
   border-radius: 5px;
 }
 
+.ak_automated_bg_banner{
+  background-image: url(../../assests/images/ak_automated_banner.png);
+  background-repeat: no-repeat;
+  background-size: 96%;
+  background-position: left top;
+  width: 100%;
+}
+.ak_get_started_banner{
+   background-image: url(../../assests/images/ak_getstarted_banner.png);
+  background-repeat: no-repeat;
+  background-size: 96%;
+  background-position: right bottom 12%;
+  width: 100%;
+
+}
+.automated_content{
+  margin-top: 70px;
+}
 .Automated {
   color: white;
   text-align: start;
@@ -274,6 +390,7 @@ font-weight: 400;
 .automated_img img {
   width: 100%;
   height: max-content;
+  margin-top:60px;
 }
 
 .automated_head {
@@ -372,7 +489,7 @@ font-weight: 400;
 .as_seen{
   margin-top: 70px;
   margin-bottom: 40px;
-  background-image: url('assests/images/as_seen_bg.png');
+  background-image: url(../../assests/images/as_seen_bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 50vh;
@@ -389,7 +506,7 @@ font-weight: 400;
 }
 
 .ak_devices_bg{
-  background-image: url(assests/images/ak_devices.png);
+  background-image: url(../../assests/images/ak_devices.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -397,6 +514,15 @@ font-weight: 400;
 
 }
 
+.ak_home_stores{
+  padding-top: 470px;
+}
+.ak_home_seen2{
+  padding: 0 120px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 /* footer */
 .btn-custom-2{
    border-style: solid;
@@ -443,13 +569,15 @@ width: 140px;
 }
 
 .ak_contactbanner2{
-  background-image: url(assests/images/ak_footer_image.png);
+  background-image: url(../../assests/images/ak_footer_image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+ height: 200px !important;
   width: 100%;
-  margin-top: 20px;
+  background-color: #1D1F26;
+  margin-top: -45px !important;
+  
 }
 
 .ak_contactbanner2_text{
@@ -457,6 +585,7 @@ width: 140px;
   text-transform: uppercase;
   margin-top: 100px;
   font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
 }
 
 .btn_contact3{
@@ -474,9 +603,7 @@ margin-top: 20px;
 .ak_contact2_content{
   padding-left: 140px;
 }
-footer{
-  background-color: #24262D;
-}
+
 
 
 
@@ -518,20 +645,126 @@ footer a{
 }
 .ak_footer_toptext{
   font-size: 14px;
+  width: 70%;
+}
+
+.ak_footer_top_logo img{
+  margin-left: 40px;
+
+  }
+.ak_footer_top_logo {
+  margin-top: -80px !important;
+
+}
+footer{
+  background-color: #24262D!important;
 }
 
 @media only screen and (max-width: 430px) {
+  .start_automated_bullet{
+    width: 100%;
+  }
+  .bullet_content{
+    text-align: center;
+  }
+  .automated_content{
+text-align: center;}
+
+  .ak_store_11{
+    margin-top: 100px;
+  }
+.ak_footer_top_logo img{
+  max-width: 100%;
+  margin-top: -90px !important;
+  margin-right: 35px;
+
+ 
+
+}
+.ak_footer_top_logo {
+  margin-top: 13px !important;
+  text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+  .btn-custom-1 {
+ 
+margin-left: 0;
+
+
+
+  
+}
+ .navbar-nav .nav-item .nav-link{
+ text-align: center;
+}
+ 
+ 
+ 
+  .as_seen{
+   height: max-content !important;
+ }
+ .ak_home_seen2 div{
+   margin-top: 15px  !important;
+
+ }
+ .ak_home_seen3 div{
+  margin-top: 15px  !important;
+  padding: 0 120px !important;
+
+
+}
+.ak_home_seen3 {
+  padding: 0 150px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+
+}
+ .as_seen h5{
+   margin-top: 20px;
+
+ }
+ 
   .ak_hero_content {
 margin: 10px 0px;
 padding-left: 0;  
 text-align: center;
 }
+.ak_contactbanner4{
+  height: max-content !important;
+}
+.ak_banner_button{
+  flex-direction: column;
+  width: 100% !important;
 
+}
+.ak_banner_button button {
+  margin-bottom: 20px;
+}
+.ak_home_icons {
+ display: none !important;
+}
+.ak_header_h{
+  max-width: 100% !important;
+  font-size: 35px;
+  text-align: center;
+}
+.ak_header_p{
+  max-width: 100% !important;
+
+  text-align: center;
+}
 .ak_hero_image img{
   padding: 10px 0;
   
   
 }
+
 .ak_hero_image
 {
   display: flex;
@@ -601,11 +834,33 @@ margin-bottom: 10px !important;
 }
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (min-width: 431px)  and (max-width: 991px) {
+  .ak_store_11{
+    margin-top: 250px !important;
+  }
+.ak_store_phone{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+  .ak_footer_toptext{
+  font-size: 14px;
+  width: 70%;
+}
 
+.ak_footer_top_logo img{
+  margin-left: 0px;
+  margin-top: -80px !important;
+
+  }
+.ak_footer_top_logo {
+  margin-top: 0px !important;
+
+}
   .ak_footer_top_logo{
     display: flex;
     justify-content: center;
+
   }
   .ak_hero_content {
 margin: 10px 0px;
@@ -637,6 +892,20 @@ text-align: center;
   
 }
  
+}
+
+@media only screen and (min-width:992px) and (max-width:1220px){
+  .ak_footer_top_logo img{
+  margin-left: 0px;
+  /* margin-top: -0px !important; */
+
+  }
+.ak_footer_top_logo {
+  margin-top: 0px !important;
+  margin-top: -150px !important;
+
+
+}
 }
 /* @media only screen and (max-width: 1400px) {
   .ak_hero_content {

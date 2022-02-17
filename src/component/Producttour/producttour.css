@@ -1,0 +1,300 @@
+
+.App {
+  /* text-align: center; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #24262D;
+  font-family: 'Poppins', sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.home_only_bit_parent{
+  background-image: url(../../assests/images/ak_bitcoin_banner.png);
+  background-position: right top 95%;
+  background-size: 82% ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+
+.ak_productbanner{
+    background-image: url(../../assests/images/ak_product_banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 65vh;
+    max-width: 100%;
+  }
+
+
+  .home_only_bit_parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+  }
+  
+  .home_only_bit_text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .bitcoin_head {
+    font-weight: 500;
+    font-size: 35px;
+  }
+  
+  .bitcoin_para {
+    font-weight: lighter;
+    font-size: 17px;
+  }
+  
+  .bitcoin_cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .pd_akcard {
+    background-color: rgb(29, 31, 38);
+    margin: 0px 12px;
+    border: none;
+    height: 170px;
+  }
+  
+  .card-title {
+    font-size: 15px;
+  }
+  
+  .for_border {
+    border-top: 2px solid gray;
+    border-radius: 50px;
+    width: 54px;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-weight: lighter;
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+  }
+
+
+  /* automated */
+
+  .Automated {
+    color: white;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  
+  .automated_img img {
+    width: 100%;
+    height: max-content;
+  }
+  
+  .automated_head {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .automated_para {
+    width: 83%;
+    font-size: 15px !important;
+    color: rgb(151, 151, 151);
+    font-weight: 300;
+  }
+  
+  .automated_bullet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+  
+  .bullet_border {
+    width: 20px !important;
+    border-radius: 15px;
+    border-bottom: 4px solid #3a91bc;
+  }
+  
+  .bullet_content {
+    margin-left: 7px;
+    font-size: 15px !important;
+    color: rgb(151, 151, 151);
+    font-weight: 300 !important;
+  }
+  
+  @media(max-width: 760px) {
+    .automated_head {
+        text-align: center;
+    }
+  
+    .automated_para {
+        width: 100%;
+        text-align: center;
+    }
+  
+    .automated_content {
+        padding: 0 10px !important;
+    }
+  }
+
+.ease{
+    border-bottom: 1px solid #3a91bc;
+}
+
+
+
+/* as seen */
+
+.ak_slider_2{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+/* invest */
+
+.ak_invest_now{
+   background-image: url(../../assests/images/ak_invest.png);
+  background-position: right  bottom ;
+  background-size: 85% ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+
+}
+
+/* share */
+.ak_share_send{
+   background-image: url(../../assests/images/ak_share_sennd.png);
+  background-position: top 25% left ;
+  background-size: 90%  ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+
+}
+
+
+.automated_content {
+padding-top: 100px;
+  
+}
+  /* news */
+  .Virtuse_news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+      background-image: url(../../assests/images/ak_virtuse_banner.png );
+  background-position: right top 95%;
+  background-size: 67% ;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  }
+  
+  .Virtuse_news_cont {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Virtuse_head {
+    font-weight: 500;
+    font-size: 35px;
+  }
+  
+  .Virtuse_para {
+    font-weight: lighter;
+    font-size: 17px;
+  }
+  
+  .Virtuse_cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .card2 {
+    background-color: rgb(29, 31, 38);
+    margin: 0px 15px;
+    border: none;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+  
+  .card-text2 {
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    width: 80%;
+  }
+
+  .view_all {
+    color: white;
+    background-color: rgb(42, 105, 143);
+    padding: 10px 30px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  
+  /* Faq */
+
+  .ak_faq_bannner1{
+    background-image: url(../../assests/images/ak_faq_banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 60vh;
+    margin-top: -170px;
+  }
+
+  .acc-card {
+    color: white;
+    background-color: #24262D;
+    /* border-bottom: 1px solid rgb(31, 31, 31); */
+    /* width: 70%; */
+    border-style: none !important;
+    height: 100%;
+  }
+
+  
+@media only screen and (max-width: 430px) {
+
+    .ak_home_seen3 div{
+     margin-top: 15px  !important;
+   
+   }
+
+   .accordion{
+    width: 100% !important;
+  }
+}

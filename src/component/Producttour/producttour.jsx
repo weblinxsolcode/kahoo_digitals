@@ -1,49 +1,37 @@
-import "./About jsx.css";
+import React from 'react'
+import './producttour.css' 
 import { useContext, useState, useEffect } from 'react';
+
+import { Link } from 'react-router-dom'
 import logo from '../../assests/images/logo.png'
-// import ak_homebanner from '../../assests/images/ak_banner1.png'
-import ak_virtusebanner from '../../assests/images/ak_virtuse_banner.png'
-// import ak_getstartedbanner from '../../assests/images/ak_getstarted_banner.png'
-import ak_homeimage1 from '../../assests/images/ak_image1.png'
-import ak_automatedbanner from '../../assests/images/ak_automated_banner.png'
-import ak_bitcoinbanner from '../../assests/images/ak_bitcoin_banner.png'
-import ak_compoundbanner from '../../assests/images/ak_compound_banner.png'
-import ak_devices from '../../assests/images/ak_devices.png'
-import ak_mobile from '../../assests/images/ak_mobile.png'
-import ak_notebook from '../../assests/images/ak_notebook.png'
-
 import ak_line from '../../assests/images/ak_line.png'
-// Contact 
-import ak_contactbanner from '../../assests/images/ak_contact_banner.png'
-import ak_locationicon from '../../assests/images/ak_location_icon.png'
-import ak_footerimage from '../../assests/images/ak_footer_image.png'
-// Learning Center
 
-import ak_learningbanner from '../../assests/images/ak_learning_banner.png'
-// import ak_learningbg from '../../assests/images/ak_virtusenews_bg.png'
-import ak_learning1 from '../../assests/images/ak_learningcard_1.png'
-import ak_learning2 from '../../assests/images/ak_learningcard_2.png'
-import ak_learning3 from '../../assests/images/ak_learningcard_3.png'
-import ak_logowhite from '../../assests/images/logo_white.png'
-// import ak_aboutbg from '../../assests/images/ak_about_bg.png'
+import ak_homeimage1 from '../../assests/images/ak_product_image1.png'
+
+import ak_homeslider1 from '../../assests/images/ak_homeslider_1.png';
+import ak_homeslider2 from '../../assests/images/ak_homeslider_2.png';
+import ak_homeslider3 from '../../assests/images/ak_homeslider_3.png';
+import ak_homeslider4 from '../../assests/images/ak_homeslider_4.png';
+
+import virtuse_img1 from "../../assests/images/virtuse img1.png"
+import virtuse_img2 from "../../assests/images/virtuse img2.png"
+import virtuse_img3 from "../../assests/images/virtuse img3.png"
+
+
+import  ak_homeimage2 from "../../assests/images/ak_product_image2.png"
+
 import { AccordionContext, useAccordionButton, Accordion, Card } from 'react-bootstrap'
 
-// About
-import ak_aboutimage3 from '../../assests/images/ak_about_image3.png'
-// import ak_faqbanner from '../../assests/images/ak_faq_banner.png'
-import ak_sliderimg1 from '../../assests/images/ak_sliderimage_1.png'
-import { Link } from "react-router-dom";
 
 
 
 
-
-function About() {
-  
+const Producttour = () => {
   function ContextAwareToggle({ children, eventKey, callback }) {
 
 
-    const { activeEventKey } = useContext(AccordionContext);
+    const { activeEventKey } = 
+    useContext(AccordionContext);
 
     const decoratedOnClick = useAccordionButton(
       eventKey,
@@ -63,9 +51,8 @@ function About() {
       </button>
     );
   }
-
   return (
-    <div className="App">
+    <div className="ak_product">
       <header className="header-wrapper my-0">
         <nav class="navbar navbar-expand-lg ">
           <div class="container">
@@ -95,7 +82,7 @@ function About() {
                 </li>
                 <li class="nav-item">
                   <Link to="/product-tour">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link " href="#">
                       Product tour
                     </a>
                   </Link>
@@ -111,7 +98,7 @@ function About() {
 
                 <li class="nav-item">
                   <Link to="/About">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link" href="#">
                       About
                     </a>
                   </Link>
@@ -142,135 +129,236 @@ function About() {
         </nav>
       </header>
 
-      <section className="ak_learning_section">
-        <div className="container-fluid ak_aboutusbanner">
+      <section className="ak_product_section">
+        <div className="container-fluid ak_productbanner">
           <div className="container">
-            <div className="row mx-0"></div>
+            <div className="row mx-0 justify-content-center align-items-center"></div>
           </div>
         </div>
       </section>
 
-      <section className="ak_learning_content">
-        <div className="container-fluid ak_aboutus_bg">
-          <div className="container ak_about_width ">
-            <div className="row mx-0 justify-content-center align-items-center">
-              <div className="col-lg-12 text-center my-5 ak_text-custom_about01">
-                <img src={ak_line} alt="" />
-                <h3 className="ak_text-custom_about1">ABOUT US</h3>
-                <p className="ak_text-custom_about2  ">
-                  Virtuse is Europe’s leading Bitcoin-centric platform and app.
-                  The platform is the easiest way to invest and accumulate
-                  Bitcoin. Users can deposit and trade Bitcoin with a EUR and
-                  set up a recurring investment from as little as 5€ a month.
-                  They can also exchange over 20 fiat currencies for
-                  cryptocurrency with debit and credit cards, seamlessly
-                  connecting the world of Bitcoin and traditional finance.
-                </p>
-                <p className="ak_text-custom_about2">
-                  Virtuse has a strong commitment to security and compliance.
-                  99% of users’ funds are kept in a cold storage with the
-                  world’s leading licensed custodian guarded by multi-signature
-                  technology and a host of other controls. The company is
-                  registered in the EU commercial registry as a licensed virtual
-                  currency exchange and wallet service. And through the
-                  partnership with the market leader in online verification and
-                  KYC/AML Virtuse adheres to the strictest KYC and AML global
-                  compliance standards.
-                </p>
-              </div>
+      <section className="home_only_bit_parent my-5">
+        <div className="home_only_bit_text ">
+          <img src={ak_line} alt="" />
+
+          <p className="bitcoin_head mb-0 text-center">
+            The only Bitcoin app you need
+          </p>
+          <p className="bitcoin_para mb-0 text-center">
+            Virtuse helps new and experienced investors securely accumulate
+            Bitcoin.
+          </p>
+        </div>
+        <div className="bitcoin_cards">
+          <div
+            className="pd_akcard border-primary mb-3"
+            style={{ maxWidth: "18rem" }}
+          >
+            {/* <div className="card-header">Header</div> */}
+            <div className="card-body text-white text-start">
+              <h5 className="card-title">Secure & Protected</h5>
+              <div className="for_border"></div>
+              <p className="card-text">
+                99% of users' funds are kept in a cold storage with the world’s
+                leading licensed custodian guarded by multi-signature technology
+                and a host of other controls. <a href="">Read more »</a>
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="ak_aboutbanner2 my-5">
-        <div className="container-fluid ak_about_banner2 p-0">
-          <div className="stats text-center my-5">
-            <div className="row mx-0 ">
-              <div className="col-lg-4 my-3 ak_about_size">
-                <div className="stats_card mb-2 ">
-                  <p className="mb-0 count">100+</p>
-                  <p className="mb-0">countries</p>
-                </div>
-              </div>
-              <div className="col-lg-4 my-3 ak_about_size">
-                <div className="stats_card_blue mb-2">
-                  <p className="mb-0 count">10m+</p>
-                  <p className="mb-0">AuM</p>
-                </div>
-              </div>
-              <div className="col-lg-4 my-3 ak_about_size">
-                <div className="stats_card3 mb-2">
-                  <p className="mb-0 count">33K+</p>
-                  <p className="mb-0">registered users</p>
-                </div>
-              </div>
+          <div
+            className="pd_akcard border-primary mb-3"
+            style={{ maxWidth: "18rem" }}
+          >
+            {/* <div className="card-header">Header</div> */}
+            <div className="card-body text-white text-start">
+              <h5 className="card-title">Fiat Gateway</h5>
+              <div className="for_border"></div>
+              <p className="card-text">
+                You can purchase Bitcoin with EUR on mobile app and web with a
+                EUR deposit from your bank via SWIFT wire or SEPA transfer. We
+                also partnered with Banxa to allow all users to deposit and
+                trade with over 20 other fiat currencies.{" "}
+                <a href="">Read more »</a>
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="row mx-0 justify-content-center align-items-center">
-            <div className="col-lg-6 my-5 ak_about_image2">
-              <img className="w-100" src={ak_aboutimage3} alt="" />
-            </div>
-            <div className="col-lg-6 my-5  ">
-              <h2 className="text-white">The meaning of “Virtuse”</h2>
-              <p className="ak_about_textp">
-                The true meaning of the term virtuse was coined at the beginning
-                of the 16th century by Niccolo Machiavelli, an Italian diplomat,
-                politician, and philosopher. According to Machiavelli, virtù is
-                a governing principle of success. He used virtù not as a moral
-                virtue, but as strength, power, control, and the ability to
-                compel objective reality to obey your will. That’s what Bitcoin
-                represents. It gives everyone power and control without
-                considering what others are trying to impose on us.{" "}
+          <div
+            className="pd_akcard border-primary mb-3"
+            style={{ maxWidth: "18rem" }}
+          >
+            {/* <div className="card-header">Header</div> */}
+            <div className="card-body text-white text-start">
+              <h5 className="card-title">DevOps & Cloud Solutions</h5>
+              <div className="for_border"></div>
+              <p className="card-text">
+                Make instant purchases or set up a recurring investment from as
+                little as $50 a month. The Virtuse platform is the easiest way
+                to invest in Bitcoin. <a href="">Read more »</a>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="contianer my-5">
-        <div className="row mx-0 justify-content-center align-items-center ">
-          <div className="col-lg-12 text-center">
-            <img src={ak_line} alt="" />
-            <h3 className="ak_text-custom_about1 my-2">Our team</h3>
+      <section className="d-flex justify-content-center align-items-center flex-column ak_invest_now">
+        <img src={ak_line} alt="" />
+
+        <div className="Automated">
+          <div className="automated_img col-12 col-md-4 col-lg-4 my-5">
+            <img className="" src={ak_homeimage1} alt="" />
+          </div>
+          <div className="col-0 col-md-1 col-lg-1"></div>
+          <div className="automated_content col-12 col-md-7 col-lg-7">
+            <div className="d-flex justify-content-start align-items-start">
+              <p className="ease  ">Invest with ease</p>
+              <p className=" ms-4">Invest with ease</p>
+            </div>
+            <p className="automated_head">Invest with ease</p>
+            <p className="automated_para">
+              Make your first crypto purchase in under 5 minutes, from as little
+              as $50, all from the palm of your hand. No other product comes
+              close.
+            </p>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">Instant Buy. Instant Sell. </div>
+            </div>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Automated recurring purchases
+              </div>
+            </div>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Credit Card and SEPA payments{" "}
+              </div>
+            </div>
+            <div className="automated_bullet mb-4">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">Accumulate real wealth.</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container ak_slider_1 mx-auto mt-5 col-md-10 mt-100">
-        <div class="row justify-content-center mx-0  pb-5">
-          <div class="card cardak  col-md-3 mt-100 pt-4">
-            <div class="card-content">
-              <div class="card-body card-bodyak p-0 ">
-                <div class="profile">
-                  {" "}
-                  <img src={ak_sliderimg1} />{" "}
-                </div>
-                <div class="card-title mt-4 my-5 ">
-                  <h5 className="ak_slider_text">John Dao</h5>
-                  <h6 className="ak_slider_text2">CEO Abc</h6>
-                </div>
-                <div class="card-subtitle d-flex justify-content-center align-items-center   my-4">
-                  <p class="ak_slider_text3">
-                    {" "}
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in culpa
-                    qui officia deserunt mollitia animi, id est laborum et
-                    dolorum fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. "{" "}
-                  </p>
-                </div>
+      </section>
+
+      <section className="ak_slider_2">
+        <div className="">
+          <div className="container my-5">
+            <h5 className="text-white text-center">You’re in good company</h5>
+
+            <div className="row mx-0 justify-content-center align-items-center p-0 my-5 mb-4 ak_home_seen2">
+              <div className="col-lg-3 d-flex justify-content-center align-items-center p-0">
+                <img src={ak_homeslider1} alt="" />
+              </div>
+              <div className="col-lg-3 d-flex justify-content-center align-items-center p-0">
+                <img src={ak_homeslider2} alt="" />
+              </div>
+              <div className="col-lg-3 d-flex justify-content-center align-items-center p-0">
+                <img src={ak_homeslider3} alt="" />
+              </div>
+              <div className="col-lg-3 d-flex justify-content-center align-items-center p-0">
+                <img src={ak_homeslider4} alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="Virtuse_news">
+        <div className="Virtuse_news_cont ">
+          <img src={ak_line} alt="" />
+
+          <p className="Virtuse_head mb-0 text-center">Virtuse News</p>
+          <p className="Virtuse_para mb-0 text-center ">
+            Weekly letter to over 15,000 investors about business, technology
+            and finance.
+          </p>
+        </div>
+        <div className="Virtuse_cards">
+          <div className="card2" style={{ width: "17rem" }}>
+            <img src={virtuse_img1} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <p className="card-text2 text-start">
+                26th October,2019
+                <br />
+                <br />
+                Ignore the Bearish Noise and Invest in Technologies and Bitcoin
+                <br /> <a href="">learn More »</a>
+              </p>
+            </div>
+          </div>
+
+          <div className="card2" style={{ width: "17rem" }}>
+            <img src={virtuse_img2} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <p className="card-text2 text-start">
+                26th October,2019
+                <br />
+                <br />
+                Ignore the Bearish Noise and Invest in Technologies and Bitcoin
+                <br /> <a href="">learn More »</a>
+              </p>
+            </div>
+          </div>
+
+          <div className="card2" style={{ width: "17rem" }}>
+            <img src={virtuse_img3} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <p className="card-text2 text-start">
+                26th October,2019
+                <br />
+                <br />
+                Ignore the Bearish Noise and Invest in Technologies and Bitcoin
+                <br /> <a href="">learn More »</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button className="view_all">View All</button>
+      </section>
+
+      <section className="ak_share_send d-flex justify-content-center align-items-center flex-column my-5">
+        <div className="Automated">
+          <div className="col-0 col-md-1 col-lg-1"></div>
+          <div className="automated_content col-12 col-md-7 col-lg-7 ">
+            <p className="automated_head ">Share and send</p>
+            <p className="automated_para">
+              Want to self-custody by sending your bitcoin to a wallet you own?
+              No problem. Buy your own Ledger Nano here and take control of your
+              Bitcoin anytime.
+            </p>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Send crypto to any crypto wallet.{" "}
+              </div>
+            </div>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Multi-sig transactions batched daily.
+              </div>
+            </div>
+            <div className="automated_bullet">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Scan QR or Copy/Paste addresses{" "}
+              </div>
+            </div>
+            <div className="automated_bullet mb-4">
+              <div className="bullet_border"></div>
+              <div className="bullet_content">
+                Not your keys, not your coins approved
+              </div>
+            </div>
+          </div>
+          <div className="automated_img col-12 col-md-4 col-lg-4 my-5">
+            <img className="" src={ak_homeimage2} alt="" />
+          </div>
+        </div>
+      </section>
 
       <div className="contianer my-5 pt-5">
         <div className="row mx-0 justify-content-center align-items-center">
@@ -372,6 +460,7 @@ function About() {
           </div>
         </div>
       </section>
+
       <footer class="text-center text-lg-start text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 "></section>
 
@@ -537,4 +626,4 @@ function About() {
   );
 }
 
-export default About;
+export default Producttour
